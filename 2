@@ -3,3 +3,7 @@ Read: APUE ch 3, 4
 Questions:
     What system calls does readdir(3) use?
 Answers:
+    On Linux and NetBSD, it's getdents(2)
+    https://stackoverflow.com/questions/17618472/using-read-system-call-on-a-directory
+
+    On MacOS, it's getdirentries(2), although that was deprecated in 10.16
