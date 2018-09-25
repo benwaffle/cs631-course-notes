@@ -1,7 +1,10 @@
 For class on: 9/24/18
 Read: APUE ch 6
 Questions:
-    What is pw_gecos?
-    Where does Mac OS keep its users besides /etc/passwd?
-    How does PAM read /etc/shadow if your program isn't setuid root?
+    1. What is pw_gecos?
+    2. Where does Mac OS keep its users besides /etc/passwd?
+    3. How does PAM read /etc/shadow if your program isn't setuid root?
 Answers:
+    1. May contain info such as name, office, office phone, and home phone. Can be changed with chfn(1)
+    2. OSX has a daemon, opendirectoryd(8), that stores this info. It can be queried with dscl(1)
+    3. pam_unix.so forks and execs unix_checkpwd, a setuid(2) root binary.
