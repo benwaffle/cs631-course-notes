@@ -7,3 +7,5 @@ Questions:
     What part of unix actually handles the shebang
     What is the global offset table and procedure linkage table?
 Answers:
+    On Linux, it is the kernel.
+    The GOT is a table of offsets which allows position-independent code to be loaded at any address and be able to resolve globals (variables and functions). The PLT is a way to make function calls more efficient by lazy-loading the offsets the GOT only when the function is first called, and not at startup.
