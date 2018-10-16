@@ -4,3 +4,4 @@ Read:
 Questions:
     Why can't you call setsid() if you are a process group leader?
 Answers:
+    Because if this was allowed, after creating a new session the old processes would have a process group leader in a different session.
