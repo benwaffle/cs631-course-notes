@@ -4,3 +4,4 @@ Read:
 Questions:
     How does nginx handle concurrency compared to apache?
 Answers:
+    nginx uses a single-threaded event loop (it can fork itself to use up multiple cores). Apache uses one thread per connection (with forking for performance)
