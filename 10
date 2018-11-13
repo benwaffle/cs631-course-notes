@@ -4,3 +4,4 @@ Read:
 Questions:
     What is systemd's new-style daemon?
 Answers:
+    systemd will handle isolating the process for you, so you do not need to call fork, setsid, chdir, or close extra file descriptors
