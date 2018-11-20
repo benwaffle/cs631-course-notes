@@ -4,3 +4,4 @@ Read:
 Questions:
     what does it my when it says flock(2) is advisory?
 Answers:
+    An advisory lock is one that is only useful if all file accessors respect the lock. It's not enforced by the system.
