@@ -1,0 +1,6 @@
+For class on: 11/26/18
+Read:
+    https://unix.stackexchange.com/questions/254956/what-is-the-difference-between-docker-lxd-and-lxc
+Questions:
+    Do LXC and Docker containerize apps in the same way?
+Answers:
