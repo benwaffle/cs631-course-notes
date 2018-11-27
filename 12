@@ -4,3 +4,4 @@ Read:
 Questions:
     Do LXC and Docker containerize apps in the same way?
 Answers:
+    Yes, they both use cgroups, namespaces, capabilities, etc...
